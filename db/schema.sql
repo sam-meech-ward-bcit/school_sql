@@ -41,3 +41,8 @@ CREATE TABLE enrollment (
   FOREIGN KEY (class_id) REFERENCES class(id) ON DELETE CASCADE,
   FOREIGN KEY (student_id) REFERENCES student(id) ON DELETE CASCADE
 );
+
+ALTER TABLE class
+ADD COLUMN total_enrollments INTEGER;
+
+
